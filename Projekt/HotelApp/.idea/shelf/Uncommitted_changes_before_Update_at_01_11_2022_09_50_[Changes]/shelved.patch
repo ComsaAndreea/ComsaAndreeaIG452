@@ -1,0 +1,196 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_19\" default=\"true\" project-jdk-name=\"19\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 916265affe21737d2add096678ee26f4609c64ff)
++++ b/.idea/misc.xml	(date 1667284590425)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" project-jdk-name="19" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/service/ManagerController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/service/ManagerController.java b/src/service/ManagerController.java
+new file mode 100644
+--- /dev/null	(date 1667289000775)
++++ b/src/service/ManagerController.java	(date 1667289000775)
+@@ -0,0 +1,17 @@
++package service;
++
++import model.Room;
++
++public class ManagerController {
++    private RoomRepository roomRepository;
++
++    public void addRoom(Room room){
++        roomRepository.add(room);
++    }
++    public void deleteRoom(int id){
++        roomRepository.delete(id);
++    }
++    public void updateRoom(Room room){
++        roomRepository.update(room);
++    }
++}
+Index: src/service/ClientController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/service/ClientController.java b/src/service/ClientController.java
+new file mode 100644
+--- /dev/null	(date 1667288918890)
++++ b/src/service/ClientController.java	(date 1667288918890)
+@@ -0,0 +1,37 @@
++package service;
++
++import model.Coupon;
++import model.Option;
++
++import java.time.LocalDate;
++import java.util.List;
++import java.util.Locale;
++
++public class ClientController {
++
++    private ClientRepository clientRepository;
++
++    public List<Option> generateOptions(LocalDate checkIn, LocalDate checkOut, int nrPers){
++
++        return null;
++    }
++    public String makeReservation(Option option, Coupon coupon){
++        //.....
++        applyCoupon(coupon);
++        return "Reservation created successfully"
++    }
++    private String applyCoupon(Coupon coupon){
++        return "Coupon applied successfully";
++        //return "Coupon not found";
++    }
++    public String deleteReservation(Reservation reservation){
++        return "Reservation deleted successfully";
++        return "Reservation not found";
++    }
++    public List<Reservation> seeAllReservations(){
++        return null;
++    }
++
++
++
++}
+Index: src/model/Option.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/model/Option.java b/src/model/Option.java
+new file mode 100644
+--- /dev/null	(date 1667288123025)
++++ b/src/model/Option.java	(date 1667288123025)
+@@ -0,0 +1,39 @@
++package model;
++
++import java.util.List;
++
++public class Option {
++    private int id;
++    private double totalPrice;
++    private List<Room> rooms;
++
++    public Option(int id, double totalPrice, List<Room> rooms) {
++        this.id = id;
++        this.totalPrice = totalPrice;
++        this.rooms = rooms;
++    }
++
++    public int getId() {
++        return id;
++    }
++
++    public void setId(int id) {
++        this.id = id;
++    }
++
++    public double getTotalPrice() {
++        return totalPrice;
++    }
++
++    public void setTotalPrice(double totalPrice) {
++        this.totalPrice = totalPrice;
++    }
++
++    public List<Room> getRooms() {
++        return rooms;
++    }
++
++    public void setRooms(List<Room> rooms) {
++        this.rooms = rooms;
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6eac5dba-35b3-43a4-bb77-fc3f5a0b373a\" name=\"Changes\" comment=\"client, coupon, person, crud + some packages done\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/model/Employee.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/model/Hotel.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/model/Room.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/model/Type.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"Enum\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2GqnZ5mqkEktb99oIBbT1ukowsr\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6eac5dba-35b3-43a4-bb77-fc3f5a0b373a\" name=\"Changes\" comment=\"\" />\r\n      <created>1667125036173</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1667125036173</updated>\r\n      <workItem from=\"1667125037801\" duration=\"298000\" />\r\n      <workItem from=\"1667139369573\" duration=\"350000\" />\r\n      <workItem from=\"1667217209770\" duration=\"4145000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commit 4\">\r\n      <created>1667139692561</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1667139692561</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"more testing\">\r\n      <created>1667140494722</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1667140494722</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commit 4\" />\r\n    <MESSAGE value=\"more testing\" />\r\n    <MESSAGE value=\"client, coupon, person, crud + some packages done\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"client, coupon, person, crud + some packages done\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 916265affe21737d2add096678ee26f4609c64ff)
++++ b/.idea/workspace.xml	(date 1667288919367)
+@@ -1,11 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="client, coupon, person, crud + some packages done">
+-      <change afterPath="$PROJECT_DIR$/src/model/Employee.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Hotel.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Room.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Type.java" afterDir="false" />
++    <list default="true" id="8d4f6b50-7198-4c1c-810d-6885ba0096de" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/model/Option.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/service/ClientController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/service/ManagerController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -17,8 +17,8 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Interface" />
+-        <option value="Class" />
+         <option value="Enum" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -46,7 +46,7 @@
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="" />
++      <changelist id="8d4f6b50-7198-4c1c-810d-6885ba0096de" name="Changes" comment="" />
+       <created>1667125036173</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -54,6 +54,7 @@
+       <workItem from="1667125037801" duration="298000" />
+       <workItem from="1667139369573" duration="350000" />
+       <workItem from="1667217209770" duration="4145000" />
++      <workItem from="1667284528027" duration="4102000" />
+     </task>
+     <task id="LOCAL-00001" summary="commit 4">
+       <created>1667139692561</created>

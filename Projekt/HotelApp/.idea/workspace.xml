@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="javadocs for cleaner controller and client controller" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.6.0.Final/hibernate-core-5.6.0.Final.jar!/org/hibernate/exception/GenericJDBCException.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2GqnZ5mqkEktb99oIBbT1ukowsr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/Andreea/Facultate/Anul3/Semestrul2/Uberprufung_und_Validierung_SS/Proiect/HotelApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Andreea\Facultate\Anul 2\MAP\HotelApp\src\main\java\repository\databaseRepo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Andreea\Facultate\Anul 2\MAP\HotelApp\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Hotel_Anwendung" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CleanerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CleanerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientControllerTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerControllerTest.addRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="addRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerControllerTest.searchAvailableRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="searchAvailableRooms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerControllerTest.setSalaryCleaner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="setSalaryCleaner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerControllerTest.updateRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="updateRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ClientControllerTest" />
+      <item itemvalue="JUnit.CleanerControllerTest" />
+      <item itemvalue="JUnit.ManagerControllerTest.addRoom" />
+      <item itemvalue="JUnit.ManagerControllerTest.setSalaryCleaner" />
+      <item itemvalue="JUnit.ManagerControllerTest.updateRoom" />
+      <item itemvalue="JUnit.ManagerControllerTest.searchAvailableRooms" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ManagerControllerTest.setSalaryCleaner" />
+        <item itemvalue="JUnit.ManagerControllerTest.updateRoom" />
+        <item itemvalue="JUnit.ManagerControllerTest.addRoom" />
+        <item itemvalue="JUnit.CleanerControllerTest" />
+        <item itemvalue="JUnit.ManagerControllerTest.searchAvailableRooms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="" />
+      <created>1667125036173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667125036173</updated>
+      <workItem from="1667125037801" duration="298000" />
+      <workItem from="1667139369573" duration="350000" />
+      <workItem from="1667217209770" duration="4145000" />
+      <workItem from="1667284470390" duration="4267000" />
+      <workItem from="1667315683530" duration="6825000" />
+      <workItem from="1667491706876" duration="47000" />
+      <workItem from="1667815607961" duration="4169000" />
+      <workItem from="1667842719491" duration="10598000" />
+      <workItem from="1667928245769" duration="9000" />
+      <workItem from="1668182909575" duration="652000" />
+      <workItem from="1668422755100" duration="493000" />
+      <workItem from="1668423888943" duration="2622000" />
+      <workItem from="1668436483653" duration="2525000" />
+      <workItem from="1668787788646" duration="1226000" />
+      <workItem from="1668963589456" duration="15644000" />
+      <workItem from="1669032501846" duration="5665000" />
+      <workItem from="1669047924633" duration="14956000" />
+      <workItem from="1669278330606" duration="7000" />
+      <workItem from="1669379802930" duration="9341000" />
+      <workItem from="1669546835221" duration="12381000" />
+      <workItem from="1669644213305" duration="420000" />
+      <workItem from="1669658235739" duration="3562000" />
+      <workItem from="1670155005320" duration="21345000" />
+      <workItem from="1670250312919" duration="2813000" />
+      <workItem from="1670253167989" duration="108000" />
+      <workItem from="1670256169134" duration="127000" />
+      <workItem from="1670268164047" duration="7485000" />
+      <workItem from="1670311436230" duration="3584000" />
+      <workItem from="1670360558897" duration="635000" />
+      <workItem from="1670366742938" duration="5121000" />
+      <workItem from="1670573140234" duration="6232000" />
+      <workItem from="1670602062870" duration="1248000" />
+      <workItem from="1670663453503" duration="14273000" />
+      <workItem from="1670687718718" duration="24250000" />
+      <workItem from="1670781914556" duration="10116000" />
+      <workItem from="1670838301705" duration="660000" />
+      <workItem from="1670847819741" duration="2919000" />
+      <workItem from="1670858255995" duration="20312000" />
+      <workItem from="1671279612943" duration="7524000" />
+      <workItem from="1671292068006" duration="5117000" />
+      <workItem from="1671305588104" duration="1094000" />
+      <workItem from="1671350539191" duration="28404000" />
+      <workItem from="1671468595259" duration="8153000" />
+      <workItem from="1671524987748" duration="1877000" />
+      <workItem from="1672346253001" duration="55000" />
+      <workItem from="1672768536230" duration="16029000" />
+      <workItem from="1672855667796" duration="8242000" />
+      <workItem from="1672864704940" duration="400000" />
+      <workItem from="1672930342935" duration="18125000" />
+      <workItem from="1673015545405" duration="24766000" />
+      <workItem from="1673257278255" duration="5871000" />
+      <workItem from="1711207274174" duration="3142000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit 4">
+      <created>1667139692561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667139692561</updated>
+    </task>
+    <task id="LOCAL-00002" summary="more testing">
+      <created>1667140494722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667140494722</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Hotel implementierung">
+      <created>1667285255634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667285255634</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Controller">
+      <created>1667289123943</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667289123943</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Controller">
+      <created>1667289136347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667289136347</updated>
+    </task>
+    <task id="LOCAL-00006" summary="revizuire totala&#10;metode toString&#10;Repository&#10;legaturi&#10;logica">
+      <created>1667304102410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667304102410</updated>
+    </task>
+    <task id="LOCAL-00007" summary="toString room">
+      <created>1667304504525</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667304504525</updated>
+    </task>
+    <task id="LOCAL-00008" summary="rename form memory to inMemory&#10;check extension and implementation with interfaces&#10;some logic changes on classes">
+      <created>1667322604074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667322604074</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Reservation Rooms plus generate options started">
+      <created>1667820354999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667820354999</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1667820470988</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667820470988</updated>
+    </task>
+    <task id="LOCAL-00011" summary="genenerate option started plus Reservation Rooms class created">
+      <created>1667820544018</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667820544018</updated>
+    </task>
+    <task id="LOCAL-00012" summary="genenerate option version 1 ended, modified classes and started make reservation">
+      <created>1667828374210</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667828374210</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ClientController done">
+      <created>1667848230929</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667848230929</updated>
+    </task>
+    <task id="LOCAL-00014" summary="login and register for client and cleaner plus little changes">
+      <created>1667849381179</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667849381179</updated>
+    </task>
+    <task id="LOCAL-00015" summary="In file + maven">
+      <created>1668436247530</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668436247530</updated>
+    </task>
+    <task id="LOCAL-00016" summary="In file + maven">
+      <created>1668437753942</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668437753942</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Views done">
+      <created>1668448614659</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448614659</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Views done">
+      <created>1668448754367</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448754367</updated>
+    </task>
+    <task id="LOCAL-00019" summary="little changes">
+      <created>1668452719103</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668452719103</updated>
+    </task>
+    <task id="LOCAL-00020" summary="tests and some changes to the functions and classes related to the tests">
+      <created>1668979024427</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668979024427</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ui">
+      <created>1669030343144</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669030343144</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ui">
+      <created>1669033220468</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669033220468</updated>
+    </task>
+    <task id="LOCAL-00023" summary="id to username">
+      <created>1669038168384</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669038168384</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added/changed id int everywhere">
+      <created>1669643529269</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669643529269</updated>
+    </task>
+    <task id="LOCAL-00025" summary="few changes">
+      <created>1670099602559</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670099602559</updated>
+    </task>
+    <task id="LOCAL-00026" summary="few changes">
+      <created>1670099857323</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670099857323</updated>
+    </task>
+    <task id="LOCAL-00027" summary="coupon print activated">
+      <created>1670253199088</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670253199088</updated>
+    </task>
+    <task id="LOCAL-00028" summary="coupon print activated">
+      <created>1670268207379</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670268207379</updated>
+    </task>
+    <task id="LOCAL-00029" summary="database repos added not final">
+      <created>1670311622606</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670311622606</updated>
+    </task>
+    <task id="LOCAL-00030" summary="some changes">
+      <created>1670594555465</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670594555465</updated>
+    </task>
+    <task id="LOCAL-00031" summary="database connection established&#10;fixed cleanings class and many to many relationship&#10;created reservation_room class in jdbc connection">
+      <created>1670712624339</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1670712624339</updated>
+    </task>
+    <task id="LOCAL-00032" summary="exceptions sterted">
+      <created>1670850690862</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670850690862</updated>
+    </task>
+    <task id="LOCAL-00033" summary="exceptions continued, Tests Client done , a filter added">
+      <created>1671133813028</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1671133813028</updated>
+    </task>
+    <task id="LOCAL-00034" summary=".">
+      <created>1671134007602</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1671134007602</updated>
+    </task>
+    <task id="LOCAL-00035" summary="commit.cometat">
+      <created>1671135250405</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1671135250405</updated>
+    </task>
+    <task id="LOCAL-00036" summary="modificarii la databaserepo">
+      <created>1671203054521</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1671203054521</updated>
+    </task>
+    <task id="LOCAL-00037" summary="modificarii var 2 la databaserepo">
+      <created>1671283560431</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671283560431</updated>
+    </task>
+    <task id="LOCAL-00038" summary="modificarii var 3 la databaserepo">
+      <created>1671287068524</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671287068524</updated>
+    </task>
+    <task id="LOCAL-00039" summary="modificarii var 4 la databaserepo">
+      <created>1671296594041</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671296594041</updated>
+    </task>
+    <task id="LOCAL-00040" summary="sorted options">
+      <created>1671489957837</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1671489957837</updated>
+    </task>
+    <task id="LOCAL-00041" summary="reset database after closing program&#10;moved read and write in view&#10;ui is clean an intelligible&#10;fixed error in deleteReservation test">
+      <created>1672863836230</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1672863836230</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fixed try catches&#10;Exceptions fixed&#10;Added exceptions in View and UI&#10;fixed errors on deleteRoom">
+      <created>1672948658402</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1672948658402</updated>
+    </task>
+    <task id="LOCAL-00043" summary="databaseClientRepo updated">
+      <created>1673277939711</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673277939711</updated>
+    </task>
+    <task id="LOCAL-00044" summary="javadocs for cleaner controller and client controller">
+      <created>1673302739769</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1673302739769</updated>
+    </task>
+    <task id="LOCAL-00045" summary="javadocs for cleaner controller and client controller">
+      <created>1673302885316</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1673302885316</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In file + maven" />
+    <MESSAGE value="Views done" />
+    <MESSAGE value="little changes" />
+    <MESSAGE value="tests and some changes to the functions and classes related to the tests" />
+    <MESSAGE value="ui" />
+    <MESSAGE value="id to username" />
+    <MESSAGE value="added/changed id int everywhere" />
+    <MESSAGE value="few changes" />
+    <MESSAGE value="coupon print activated" />
+    <MESSAGE value="database repos added not final" />
+    <MESSAGE value="some changes" />
+    <MESSAGE value="database connection established&#10;fixed cleanings class and many to many relationship&#10;created reservation_room class in jdbc connection" />
+    <MESSAGE value="exceptions sterted" />
+    <MESSAGE value="exceptions continued, Tests Client done , a filter added" />
+    <MESSAGE value="." />
+    <MESSAGE value="commit.cometat" />
+    <MESSAGE value="modificarii la databaserepo" />
+    <MESSAGE value="modificarii var 2 la databaserepo" />
+    <MESSAGE value="modificarii var 3 la databaserepo" />
+    <MESSAGE value="modificarii var 4 la databaserepo" />
+    <MESSAGE value="sorted options" />
+    <MESSAGE value="reset database after closing program&#10;moved read and write in view&#10;ui is clean an intelligible&#10;fixed error in deleteReservation test" />
+    <MESSAGE value="Fixed try catches&#10;Exceptions fixed&#10;Added exceptions in View and UI&#10;fixed errors on deleteRoom" />
+    <MESSAGE value="databaseClientRepo updated" />
+    <MESSAGE value="javadocs for cleaner controller and client controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="javadocs for cleaner controller and client controller" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hotel_Anwendung$ManagerControllerTest_changePassword.ic" NAME="ManagerControllerTest.changePassword Coverage Results" MODIFIED="1673300693945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+  </component>
+</project>

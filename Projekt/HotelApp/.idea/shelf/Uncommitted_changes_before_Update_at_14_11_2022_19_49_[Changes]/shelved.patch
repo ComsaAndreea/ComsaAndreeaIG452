@@ -1,0 +1,93 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,14 +5,16 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="In file + maven">
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/clients.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileClientRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileClientRepo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileReservationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileReservationRepo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileRoomRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/fileRepo/FileRoomRepo.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/model/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Cleaner.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/repository/inMemoryRepo/InMemoryCleanerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/inMemoryRepo/InMemoryCleanerRepo.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/service/CleanerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CleanerController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/service/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ClientController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/service/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ManagerController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/views/CleanerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CleanerView.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/views/ClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/ClientView.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/views/ManagerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/ManagerView.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -7,7 +7,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" project-jdk-name="19" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/service/ManagerController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/service/ManagerController.java b/src/main/java/service/ManagerController.java
+--- a/src/main/java/service/ManagerController.java	
++++ b/src/main/java/service/ManagerController.java	
+@@ -5,6 +5,7 @@
+ import views.ManagerView;
+ 
+ import java.util.List;
++import java.util.Objects;
+ 
+ public class ManagerController {
+     private String password;
+@@ -13,7 +14,7 @@
+     private InMemoryCleanerRepo cleanerRepo;
+     private InMemoryCleaningsRepo cleaningsRepo;
+     private InMemoryReservationRepo reservationRepo;
+-    private ManagerView managerview;
++
+ 
+     public ManagerController(InMemoryRoomRepo roomRepo, InMemoryClientRepo clientRepo, InMemoryCleanerRepo cleanerRepo, InMemoryCleaningsRepo cleaningsRepo, InMemoryReservationRepo reservationRepo) {
+         this.roomRepo = roomRepo;
+@@ -22,7 +23,18 @@
+         this.cleaningsRepo = cleaningsRepo;
+         this.reservationRepo = reservationRepo;
+     }
+-
++    public String setSalaryCleaner(String username, int salary)
++    {
++        for (Cleaner c : cleanerRepo.getAll())
++        {
++            if (Objects.equals(c.getUsername(), username))
++            {
++                c.setSalary(salary);
++                return "Salary to " + username + " was succesfully set";
++            }
++        }
++        return "" + username + " is not in our system";
++    }
+     // PASSWORD
+ 
+     public boolean login(String password){
