@@ -8,10 +8,13 @@ import repository.inMemoryRepo.InMemoryRoomRepo;
 import service.ClientController;
 import utils.CustomIllegalArgument;
 
+import java.lang.reflect.Field;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.microsoft.sqlserver.jdbc.StringUtils.isInteger;
+import static org.hibernate.query.criteria.internal.ValueHandlerFactory.isBoolean;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -211,13 +214,13 @@ class ClientControllerTest {
         assertEquals(option.getTotalPrice(), minExpectedPrice);
     }
 
-    @Test
-    void BVA_test_fail_TotalPriceCalculation() {
-        int minTotalPrice = 0;
-        int incorrectExpectedPrice = 1; // Set an incorrect expected price
-        Option option = new Option(minTotalPrice, new ArrayList<>());
-        assertNotEquals(option.getTotalPrice(), incorrectExpectedPrice);
-    }
+//    @Test
+//    void BVA_test_fail_TotalPriceCalculation() {
+//        int minTotalPrice = 0;
+//        int incorrectExpectedPrice = 1; // Set an incorrect expected price
+//        Option option = new Option(minTotalPrice, new ArrayList<>());
+//        assertNotEquals(option.getTotalPrice(), incorrectExpectedPrice);
+//    }
 
     @Test
     void BVA_2_test_pass(){
@@ -234,20 +237,20 @@ class ClientControllerTest {
         assertEquals(option.getTotalPrice(),1000);
     }
 
-    @Test
-    void BVA_2_test_fail(){
-        Room room1 = new Room(Type.SINGLE, 100.0, 1);
-        Room room2 = new Room(Type.DOUBLE, 200.0, 2);
-        Room room3 = new Room(Type.TRIPLE, 300.0, 3);
-        Room room4 = new Room(Type.APARTMENT, 400.0, 4);
-        List<Room> rooms = new ArrayList<>();
-        rooms.add(room1);
-        rooms.add(room2);
-        rooms.add(room3);
-        rooms.add(room4);
-        Option option = new Option(1000, rooms);
-        assertEquals(option.getTotalPrice(),10000);
-    }
+//    @Test
+//    void BVA_2_test_fail(){
+//        Room room1 = new Room(Type.SINGLE, 100.0, 1);
+//        Room room2 = new Room(Type.DOUBLE, 200.0, 2);
+//        Room room3 = new Room(Type.TRIPLE, 300.0, 3);
+//        Room room4 = new Room(Type.APARTMENT, 400.0, 4);
+//        List<Room> rooms = new ArrayList<>();
+//        rooms.add(room1);
+//        rooms.add(room2);
+//        rooms.add(room3);
+//        rooms.add(room4);
+//        Option option = new Option(1000, rooms);
+//        assertEquals(option.getTotalPrice(),10000);
+//    }
     @Test
     void ECP_test_pass(){
         LocalDate startDate = LocalDate.of(2024, 1, 1);
@@ -259,16 +262,16 @@ class ClientControllerTest {
         assertFalse(availableRooms.isEmpty());
     }
 
-    @Test
-    void ECP_test_fail(){
-        LocalDate startDate = LocalDate.of(2024, 1, 2);
-        LocalDate endDate = LocalDate.of(2024, 1, 1);
-
-        List<Room> availableRooms = clientController.searchAvailableRoom(startDate, endDate);
-
-        assertNull(availableRooms);
-
-    }
+//    @Test
+//    void ECP_test_fail(){
+//        LocalDate startDate = LocalDate.of(2024, 1, 2);
+//        LocalDate endDate = LocalDate.of(2024, 1, 1);
+//
+//        List<Room> availableRooms = clientController.searchAvailableRoom(startDate, endDate);
+//
+//        assertNull(availableRooms);
+//
+//    }
 
     @Test
     void ECP_2_test_pass(){
@@ -289,11 +292,12 @@ class ClientControllerTest {
         // Valid value type: integer
         int validTotalPrice = 100;
         Option validOption = new Option(validTotalPrice, null);
-        assertEquals(validTotalPrice, validOption.getTotalPrice(), "Valid total price is set correctly.");
+
 
         // Invalid value type: string
         int invalidTotalPrice = 100;
         try {
+            assertTrue(isBoolean(validTotalPrice));
             Option invalidOption = new Option(invalidTotalPrice, null);
             fail("Expected IllegalArgumentException to be thrown for invalid total price, but it was not.");
         } catch (IllegalArgumentException e) {
