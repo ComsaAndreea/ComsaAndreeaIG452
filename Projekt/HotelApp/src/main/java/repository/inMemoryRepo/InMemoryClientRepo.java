@@ -82,7 +82,9 @@ public class InMemoryClientRepo implements IClientRespository {
         reservation_id++;
         r.setId(reservation_id);
         Client c = findById(clientId);
-        c.addReservation(r);
+        if(c != null){
+            c.addReservation(r);
+        }
     }
     public Reservation findReservationById(int id){
         Reservation res = null;

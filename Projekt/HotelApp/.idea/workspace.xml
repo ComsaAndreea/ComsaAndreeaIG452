@@ -22,17 +22,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.6.0.Final/hibernate-core-5.6.0.Final.jar!/org/hibernate/exception/GenericJDBCException.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/target/test-classes/tests/ClientControllerTest.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2GqnZ5mqkEktb99oIBbT1ukowsr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,7 +48,8 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/Andreea/Facultate/Anul3/Semestrul2/Uberprufung_und_Validierung_SS/Proiect/HotelApp",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Andreea/Facultate/Anul3/Semestrul2/Uberprufung_und_Validierung_SS/Labor/GitRepository/ComsaAndreeaIG452/Projekt/HotelApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +58,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -79,25 +81,10 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ClientControllerTest.ECP_test_pass">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Hotel_Anwendung" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CleanerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hotel_Anwendung" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CleanerControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerControllerTest.addRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientControllerTest.BVA_2_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -127,14 +114,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
-      <option name="METHOD_NAME" value="addRoom" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="BVA_2_test_fail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerControllerTest.searchAvailableRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientControllerTest.ECP_2_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -143,14 +130,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
-      <option name="METHOD_NAME" value="searchAvailableRooms" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="ECP_2_test_fail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerControllerTest.setSalaryCleaner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientControllerTest.ECP_2_test_pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -159,14 +146,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
-      <option name="METHOD_NAME" value="setSalaryCleaner" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="ECP_2_test_pass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerControllerTest.updateRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientControllerTest.ECP_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -175,8 +162,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
-      <option name="METHOD_NAME" value="updateRoom" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="ECP_test_fail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientControllerTest.ECP_test_pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Anwendung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
+      <option name="METHOD_NAME" value="ECP_test_pass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,19 +188,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ClientControllerTest" />
-      <item itemvalue="JUnit.CleanerControllerTest" />
-      <item itemvalue="JUnit.ManagerControllerTest.addRoom" />
-      <item itemvalue="JUnit.ManagerControllerTest.setSalaryCleaner" />
-      <item itemvalue="JUnit.ManagerControllerTest.updateRoom" />
-      <item itemvalue="JUnit.ManagerControllerTest.searchAvailableRooms" />
+      <item itemvalue="JUnit.ClientControllerTest.BVA_2_test_fail" />
+      <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_fail" />
+      <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_pass" />
+      <item itemvalue="JUnit.ClientControllerTest.ECP_test_fail" />
+      <item itemvalue="JUnit.ClientControllerTest.ECP_test_pass" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManagerControllerTest.setSalaryCleaner" />
-        <item itemvalue="JUnit.ManagerControllerTest.updateRoom" />
-        <item itemvalue="JUnit.ManagerControllerTest.addRoom" />
-        <item itemvalue="JUnit.CleanerControllerTest" />
-        <item itemvalue="JUnit.ManagerControllerTest.searchAvailableRooms" />
+        <item itemvalue="JUnit.ClientControllerTest.ECP_test_pass" />
+        <item itemvalue="JUnit.ClientControllerTest.ECP_test_fail" />
+        <item itemvalue="JUnit.ClientControllerTest.BVA_2_test_fail" />
+        <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_fail" />
+        <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_pass" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +264,10 @@
       <workItem from="1673015545405" duration="24766000" />
       <workItem from="1673257278255" duration="5871000" />
       <workItem from="1711207274174" duration="3142000" />
+      <workItem from="1711317182186" duration="1418000" />
+      <workItem from="1711321947877" duration="12000" />
+      <workItem from="1711347460141" duration="3338000" />
+      <workItem from="1711351206439" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="commit 4">
       <created>1667139692561</created>
@@ -621,6 +628,17 @@
     <MESSAGE value="databaseClientRepo updated" />
     <MESSAGE value="javadocs for cleaner controller and client controller" />
     <option name="LAST_COMMIT_MESSAGE" value="javadocs for cleaner controller and client controller" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ClientControllerTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hotel_Anwendung$ManagerControllerTest_changePassword.ic" NAME="ManagerControllerTest.changePassword Coverage Results" MODIFIED="1673300693945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -13,6 +13,7 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\SQLEXPRESS;database=Hotel2;encrypt=true;trustServerCertificate=true"/>
             <property name="javax.persistence.jdbc.user" value="andreea"/>
             <property name="javax.persistence.jdbc.password" value="andreea"/>

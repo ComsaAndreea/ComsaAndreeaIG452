@@ -113,4 +113,6 @@ class ManagerControllerTest {
         assert cleanerRepo.findById(1).getSalary() == 2925;
     }
 
+
+
 }
