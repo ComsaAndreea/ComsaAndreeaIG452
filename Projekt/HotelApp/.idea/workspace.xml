@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="javadocs for cleaner controller and client controller" />
+    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="javadocs for cleaner controller and client controller">
+      <change beforePath="$PROJECT_DIR$/../../Docs/Lab02/~$b02Dokumentation.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +83,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClientControllerTest.ECP_2_test_fail">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Hotel_Anwendung" />
@@ -268,7 +270,8 @@
       <workItem from="1711321947877" duration="12000" />
       <workItem from="1711347460141" duration="3338000" />
       <workItem from="1711351206439" duration="2559000" />
-      <workItem from="1711354201627" duration="2086000" />
+      <workItem from="1711354201627" duration="3009000" />
+      <workItem from="1711460767483" duration="7770000" />
     </task>
     <task id="LOCAL-00001" summary="commit 4">
       <created>1667139692561</created>

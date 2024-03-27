@@ -149,10 +149,12 @@ public class ManagerController {
      * @param price price of the room
      * @param nrPers capacity of a room
      */
-    public void addRoom(Type type, double price, int nrPers) {
+    public boolean addRoom(Type type, double price, int nrPers) {
         if (checkTypeRoom(type,nrPers)) {
             roomRepo.add(new Room(type,price,nrPers));
+            return true;
         }
+        return false;
     }
 
 

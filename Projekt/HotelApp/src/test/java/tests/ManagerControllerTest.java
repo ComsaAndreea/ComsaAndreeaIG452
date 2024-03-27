@@ -13,6 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.hibernate.query.criteria.internal.ValueHandlerFactory.isBoolean;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ManagerControllerTest {
@@ -112,6 +113,69 @@ class ManagerControllerTest {
         managerController.setSalaryCleaner(1,2925);
         assert cleanerRepo.findById(1).getSalary() == 2925;
     }
+
+
+    ////////////////////////////////////////////////////////////////////////////
+    // Teste fur Labor 2 UVSS
+    ///////////////////////////////////////////////////////////////////////////
+
+    @Test
+    void ECP_1_test_pass(){
+        int nrPers = 3;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.TRIPLE,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void ECP_1_test_fail(){
+        int nrPers = -3;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.DOUBLE,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void ECP_2_test_fail(){
+        int nrPers = 8;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.DOUBLE,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void BVA_1_test_pass() {
+        int nrPers = 1;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.SINGLE,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void BVA_1_test_fail() {
+        int nrPers = 0;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.SINGLE,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void BVA_2_test_pass(){
+        int nrPers = 4;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.APARTMENT,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+    @Test
+    void BVA_2_test_fail(){
+        int nrPers = 5;
+        boolean test_passed;
+        test_passed = managerController.addRoom(Type.APARTMENT,340.0,nrPers);
+        assertTrue(test_passed);
+    }
+
+
 
 
 
