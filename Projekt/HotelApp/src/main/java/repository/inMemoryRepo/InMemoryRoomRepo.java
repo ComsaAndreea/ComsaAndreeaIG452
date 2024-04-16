@@ -90,4 +90,9 @@ public class InMemoryRoomRepo implements IRoomRepository {
         }
         return typeRooms;
     }
+
+    public void emptyRepo(){
+        rooms.clear();
+    }
+
 }

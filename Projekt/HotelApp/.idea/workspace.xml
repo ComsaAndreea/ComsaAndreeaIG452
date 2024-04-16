@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="javadocs for cleaner controller and client controller">
-      <change beforePath="$PROJECT_DIR$/../../Docs/Lab02/~$b02Dokumentation.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="6eac5dba-35b3-43a4-bb77-fc3f5a0b373a" name="Changes" comment="javadocs for cleaner controller and client controller" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +26,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.6.0.Final/hibernate-core-5.6.0.Final.jar!/org/hibernate/exception/GenericJDBCException.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/target/classes/repository/inMemoryRepo/InMemoryCleanerRepo.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/target/classes/repository/inMemoryRepo/InMemoryRoomRepo.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/target/test-classes/tests/ClientControllerTest.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,7 +83,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ManagerControllerTest.F02_TC01">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Hotel_Anwendung" />
@@ -107,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientControllerTest.BVA_2_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.F02_TC01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -116,14 +116,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
-      <option name="METHOD_NAME" value="BVA_2_test_fail" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="F02_TC01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientControllerTest.ECP_2_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.F02_TC03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -132,14 +132,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
-      <option name="METHOD_NAME" value="ECP_2_test_fail" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="F02_TC03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientControllerTest.ECP_2_test_pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.F02_TC04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -148,14 +148,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
-      <option name="METHOD_NAME" value="ECP_2_test_pass" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="F02_TC04" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientControllerTest.ECP_test_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.F02_TC05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -164,14 +164,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
-      <option name="METHOD_NAME" value="ECP_test_fail" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="F02_TC05" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientControllerTest.ECP_test_pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.F02_TC06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Anwendung" />
       <extension name="coverage">
         <pattern>
@@ -180,8 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClientControllerTest" />
-      <option name="METHOD_NAME" value="ECP_test_pass" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="F02_TC06" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,19 +190,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ClientControllerTest" />
-      <item itemvalue="JUnit.ClientControllerTest.BVA_2_test_fail" />
-      <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_fail" />
-      <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_pass" />
-      <item itemvalue="JUnit.ClientControllerTest.ECP_test_fail" />
-      <item itemvalue="JUnit.ClientControllerTest.ECP_test_pass" />
+      <item itemvalue="JUnit.ManagerControllerTest.F02_TC01" />
+      <item itemvalue="JUnit.ManagerControllerTest.F02_TC03" />
+      <item itemvalue="JUnit.ManagerControllerTest.F02_TC04" />
+      <item itemvalue="JUnit.ManagerControllerTest.F02_TC05" />
+      <item itemvalue="JUnit.ManagerControllerTest.F02_TC06" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_fail" />
-        <item itemvalue="JUnit.ClientControllerTest.ECP_test_pass" />
-        <item itemvalue="JUnit.ClientControllerTest.ECP_test_fail" />
-        <item itemvalue="JUnit.ClientControllerTest.BVA_2_test_fail" />
-        <item itemvalue="JUnit.ClientControllerTest.ECP_2_test_pass" />
+        <item itemvalue="JUnit.ManagerControllerTest.F02_TC01" />
+        <item itemvalue="JUnit.ManagerControllerTest.F02_TC06" />
+        <item itemvalue="JUnit.ManagerControllerTest.F02_TC05" />
+        <item itemvalue="JUnit.ManagerControllerTest.F02_TC04" />
+        <item itemvalue="JUnit.ManagerControllerTest.F02_TC03" />
       </list>
     </recent_temporary>
   </component>
@@ -272,6 +272,11 @@
       <workItem from="1711351206439" duration="2559000" />
       <workItem from="1711354201627" duration="3009000" />
       <workItem from="1711460767483" duration="7770000" />
+      <workItem from="1711606443808" duration="356000" />
+      <workItem from="1711978998003" duration="43000" />
+      <workItem from="1713300729575" duration="809000" />
+      <workItem from="1713301553130" duration="335000" />
+      <workItem from="1713301924537" duration="2762000" />
     </task>
     <task id="LOCAL-00001" summary="commit 4">
       <created>1667139692561</created>
@@ -646,6 +651,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hotel_Anwendung$ManagerControllerTest_changePassword.ic" NAME="ManagerControllerTest.changePassword Coverage Results" MODIFIED="1673300693945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HotelApp$ManagerControllerTest_F02_TC01.ic" NAME="ManagerControllerTest.F02_TC01 Coverage Results" MODIFIED="1713309279902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tests.*</FILTER>
     </SUITE>
   </component>

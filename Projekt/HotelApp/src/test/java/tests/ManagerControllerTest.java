@@ -176,7 +176,73 @@ class ManagerControllerTest {
     }
 
 
+    ////////////////////////////
+    // Labor 3
+    InMemoryRoomRepo roomRepo2 = new InMemoryRoomRepo();
 
+    @Test
+    void F02_TC01()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.SINGLE;
+        roomRepo2.add(new Room(Type.SINGLE,200,1));
+        roomRepo2.add(new Room(Type.SINGLE,200,1));
 
+        assert(roomRepo2.returnRoomsOfType(t).size() == 2);
+    }
+    @Test
+    void F02_TC02()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.DOUBLE;
+        roomRepo2.add(new Room(Type.DOUBLE,300,2));
+
+        assert(roomRepo2.returnRoomsOfType(t).size() == 1);
+    }
+    @Test
+    void F02_TC03()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.SINGLE;
+
+        assert(roomRepo2.returnRoomsOfType(t).size() == 0);
+    }
+    @Test
+    void F02_TC04()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.DOUBLE;
+        roomRepo2.add(new Room(Type.SINGLE,200,1));
+        roomRepo2.add(new Room(Type.DOUBLE,400,2));
+        roomRepo2.add(new Room(Type.DOUBLE,500,2));
+        roomRepo2.add(new Room(Type.APARTMENT,500,4));
+
+        assert(roomRepo2.returnRoomsOfType(t).size() == 2);
+    }
+    @Test
+    void F02_TC05()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.DOUBLE;
+        roomRepo2.add(new Room(Type.SINGLE,200,1));
+        roomRepo2.add(new Room(Type.DOUBLE,400,2));
+        roomRepo2.add(new Room(Type.DOUBLE,500,2));
+
+        assert(roomRepo2.returnRoomsOfType(t).size() == 2);
+    }
+    @Test
+    void F02_TC06()
+    {
+        roomRepo2.emptyRepo();
+        Type t = Type.APARTMENT;
+        roomRepo2.add(new Room(Type.SINGLE,200,1));
+        roomRepo2.add(new Room(Type.DOUBLE,400,2));
+        roomRepo2.add(new Room(Type.DOUBLE,500,2));
+        roomRepo2.add(new Room(Type.APARTMENT,500,4));
+        roomRepo2.add(new Room(Type.APARTMENT,500,4));
+        roomRepo2.add(new Room(Type.APARTMENT,500,4));
+
+        assert(roomRepo2.returnRoomsOfType(t).size() == 3);
+    }
 
 }
