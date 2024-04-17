@@ -1,0 +1,202 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InMemoryRoomRepo</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">repository.inMemoryRepo</a>
+</div>
+
+<h1>Coverage Summary for Class: InMemoryRoomRepo (repository.inMemoryRepo)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">InMemoryRoomRepo</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    55.6%
+  </span>
+  <span class="absValue">
+    (5/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75.6%
+  </span>
+  <span class="absValue">
+    (34/45)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package repository.inMemoryRepo;
+&nbsp;
+&nbsp;        import model.Room;
+&nbsp;        import model.Type;
+&nbsp;        import repository.IRoomRepository;
+&nbsp;
+&nbsp;        import java.util.ArrayList;
+&nbsp;        import java.util.List;
+&nbsp;
+&nbsp;public class InMemoryRoomRepo implements IRoomRepository {
+&nbsp;    private List&lt;Room&gt; rooms;
+&nbsp;    private int room_id;
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;    public InMemoryRoomRepo() {</b>
+<b class="fc">&nbsp;        this.rooms = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;        room_id = 0;</b>
+<b class="fc">&nbsp;        populate_rooms();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private void populate_rooms()
+&nbsp;    {
+&nbsp;
+<b class="fc">&nbsp;        Room rooms1 = new Room(Type.SINGLE,300,1);</b>
+<b class="fc">&nbsp;        Room rooms2 = new Room(Type.SINGLE,300,1);</b>
+<b class="fc">&nbsp;        Room rooms3 = new Room(Type.SINGLE,300,1);</b>
+<b class="fc">&nbsp;        Room roomd1 = new Room(Type.DOUBLE,400,2);</b>
+<b class="fc">&nbsp;        Room roomd2 = new Room(Type.DOUBLE,400,2);</b>
+<b class="fc">&nbsp;        Room roomt1 = new Room(Type.TRIPLE,700,3);</b>
+<b class="fc">&nbsp;        Room roomt2 = new Room(Type.TRIPLE,700,3);</b>
+<b class="fc">&nbsp;        Room roomt3 = new Room(Type.TRIPLE,700,3);</b>
+<b class="fc">&nbsp;        Room rooma1 = new Room(Type.APARTMENT,1000,4);</b>
+<b class="fc">&nbsp;        Room rooma2 = new Room(Type.APARTMENT,1000,4);</b>
+<b class="fc">&nbsp;        this.add(rooms1);</b>
+<b class="fc">&nbsp;        this.add(rooms2);</b>
+<b class="fc">&nbsp;        this.add(rooms3);</b>
+<b class="fc">&nbsp;        this.add(roomd1);</b>
+<b class="fc">&nbsp;        this.add(roomd2);</b>
+<b class="fc">&nbsp;        this.add(roomt1);</b>
+<b class="fc">&nbsp;        this.add(roomt2);</b>
+<b class="fc">&nbsp;        this.add(roomt3);</b>
+<b class="fc">&nbsp;        this.add(rooma1);</b>
+<b class="fc">&nbsp;        this.add(rooma2);</b>
+&nbsp;    }
+&nbsp;    @Override
+&nbsp;    public void add(Room room) {
+<b class="fc">&nbsp;        room_id++;</b>
+<b class="fc">&nbsp;        room.setId(room_id);</b>
+<b class="fc">&nbsp;        rooms.add(room);</b>
+&nbsp;
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void delete(Integer id) {
+<b class="nc">&nbsp;        if(findById(id)!=null){</b>
+<b class="nc">&nbsp;            rooms.remove(findById(id));</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void update(Integer id, Room room) {
+<b class="nc">&nbsp;        findById(id).setPrice(room.getPrice());</b>
+<b class="nc">&nbsp;        findById(id).setType(room.getType());</b>
+<b class="nc">&nbsp;        findById(id).setNrPers(room.getNrPers());</b>
+&nbsp;    }
+&nbsp;    @Override
+&nbsp;    public Room findById(Integer id){
+<b class="nc">&nbsp;        for(Room r : rooms){</b>
+<b class="nc">&nbsp;            if(r.getId() == id){</b>
+<b class="nc">&nbsp;                return r;</b>
+&nbsp;            }
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        return null;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public List&lt;Room&gt; getAll() {
+<b class="nc">&nbsp;        return rooms;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public List&lt;Room&gt; returnRoomsOfType(Type t) {
+<b class="fc">&nbsp;        List&lt;Room&gt;typeRooms = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;        for (Room room : rooms)</b>
+&nbsp;        {
+<b class="fc">&nbsp;            if (room.getType() == t)</b>
+&nbsp;            {
+<b class="fc">&nbsp;                typeRooms.add(room);</b>
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        return typeRooms;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void emptyRepo(){
+<b class="fc">&nbsp;        rooms.clear();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-04-17 08:53</div>
+</div>
+</body>
+</html>
